@@ -1,0 +1,167 @@
+.dailyVerse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  height: 500px;
+  margin: 50px auto 20px;
+}
+
+.dailyVerseWrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 66%;
+}
+
+.dailyVerseTitle {
+  font-size: 28px;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 10px;
+}
+
+.dailyVerseTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 90px;
+  height: 4px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.dailyVerseTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: mediumseagreen;
+  border-radius: 20px;
+}
+
+.dailyVerseSpan {
+  color: mediumseagreen;
+}
+
+.dailyVerseText {
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.dailyVerseReference {
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: indianred;
+  text-align: right;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.dailyVerseReference::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90px;
+  height: 4px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.dailyVerseReference::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 60px;
+  height: 4px;
+  background-color: mediumseagreen;
+  border-radius: 20px;
+}
+
+.dailyVerseButton {
+  width: auto;
+  height: auto;
+  margin: auto 0;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 25px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+
+.dailyVerseButton:hover {
+  border: 2px solid mediumseagreen;
+  background-color: mediumseagreen;
+}
+
+.dailyVerseButtonSpan {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+
+  background-image: linear-gradient(
+    to right,
+    white,
+    white 50%,
+    mediumseagreen 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9;
+  transition: background-position ease-in-out 0.3s;
+}
+
+.dailyVerseButtonSpan:hover {
+  background-position: 0;
+}
+
+/* Responsivo */
+@media (max-width: 1365px) {
+  .dailyVerse {
+    flex-direction: column;
+  }
+
+  .dailyVerseWrapper {
+    max-width: 100%;
+  }
+
+  .dailyVerseButton {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  .dailyVerse {
+    height: 550px;
+    width: 336px;
+  }
+}

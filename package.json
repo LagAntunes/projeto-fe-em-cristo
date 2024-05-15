@@ -1,0 +1,19 @@
+{
+  "name": "fe-em-cristo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^10.2.3",
+    "normalize.css": "^8.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-scroll": "^1.9.0",
+    "swiper": "^11.1.1"
+  }
+}

@@ -1,0 +1,182 @@
+.fiveColours {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+  background: rgba(0, 0, 0, 0.28);
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.fiveColoursTextWrapper {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fiveColoursTitle {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.fiveColoursSpan {
+  color: gold;
+}
+
+.fiveColoursText {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.fiveColoursList {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.fiveColoursListItemRight,
+.fiveColoursListItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 2s ease, transform 1.5s ease;
+}
+
+.fiveColoursListItemLeft {
+  flex-direction: row-reverse;
+  transform: translateX(-500px);
+}
+
+.fiveColoursListItemRight {
+  flex-direction: row;
+  transform: translateX(500px);
+}
+
+.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fiveColoursListItemImage {
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.fiveColoursListItemTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.fiveColoursListItemTitleBlack,
+.fiveColoursListItemTitleRed,
+.fiveColoursListItemTitleYellow,
+.fiveColoursListItemTitleGreen,
+.fiveColoursListItemTitleWhite {
+  font-size: 35px;
+  line-height: 110%;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.fiveColoursListItemTitleBlack {
+  color: black;
+}
+
+.fiveColoursListItemTitleRed {
+  color: red;
+}
+
+.fiveColoursListItemTitleYellow {
+  color: gold;
+}
+
+.fiveColoursListItemTitleGreen {
+  color: mediumseagreen;
+}
+
+.fiveColoursListItemTitleWhite {
+  color: white;
+}
+
+.fiveColoursListItemText {
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 400;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Responsivo */
+@media (max-width: 1365px) {
+  .fiveColoursListItemRight,
+  .fiveColoursListItemLeft {
+    flex-direction: column-reverse;
+  }
+
+  .fiveColoursListItemImage {
+    width: 360px;
+    height: 360px;
+  }
+
+  .fiveColoursListItemTitleBlack,
+  .fiveColoursListItemTitleRed,
+  .fiveColoursListItemTitleYellow,
+  .fiveColoursListItemTitleGreen,
+  .fiveColoursListItemTitleWhite {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .fiveColoursTextWrapper {
+    padding: 40px 0 25px;
+  }
+}
+
+@media (max-width: 639px) {
+  .fiveColours {
+    padding-bottom: 190px;
+  }
+
+  .fiveColoursTextWrapper {
+    padding: 130px 0 25px;
+    width: 336px;
+  }
+
+  .fiveColoursTitle {
+    text-align: center;
+  }
+
+  .fiveColoursList {
+    width: 336px;
+  }
+
+  .fiveColoursListItemText {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
